@@ -9,6 +9,7 @@
       width: 25px;
       height: 25px;
       align-self: center;
+      cursor: pointer;
     }
     .Headset {
       flex-grow: 1;
@@ -23,6 +24,7 @@
       color: rgb(64, 68, 73);
       align-self: center;
       margin-top: 5px;
+      cursor: default;
     }
   }
 
