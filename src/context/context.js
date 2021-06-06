@@ -6,7 +6,8 @@ export const Context = React.createContext({});
 export default (props) => {
   const [deliveryCost, setDeliveryCost] = useState(0);
   const [summ, setSumm] = useState(0);
-  const [viewProd, setViewProd] = useState(true)
+  const [viewProd, setViewProd] = useState(true);
+  const [allView, setAllView] = useState(true);
   
   useEffect(() => {
     submitChanges();
@@ -36,6 +37,8 @@ export default (props) => {
         submitChanges: submitChanges,
         viewProd: viewProd, 
         setViewProd: setViewProd,
+        allView: allView,
+        setAllView: setAllView,
       }}
     >
       {props.children}
