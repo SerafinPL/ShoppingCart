@@ -1,10 +1,11 @@
 import React from "react";
 
 import Button from "../Button/Button";
+import Quantity from "../Quantity/Quantity";
 import styles from "./ProductsList.module.scss";
 
 import fotoX from "../../images/x-img.png";
-import fotoPencil from "../../images/edit-img.png";
+
 
 const ProductsList = (props) => {
   let products = [];  
@@ -22,7 +23,8 @@ const ProductsList = (props) => {
       </div>
       <p>{item.name}</p>
       <p>${item.price.toFixed(2)}</p>
-      <div className={styles.Qty}>change</div>
+      
+      <Quantity/>
     </main>
   )))
 }

@@ -1,0 +1,38 @@
+.Qty {
+    width: 150px;
+    font-weight: normal;
+    color: rgb(64, 68, 73);
+    align-self: center;
+    margin-top: 5px;
+    text-align: left;
+
+    input{
+        width: 35px;
+        height: 35px;
+        border: solid 1px dimgray;
+        border-radius: 0px;
+
+    }
+
+    span{
+        display: inline-block;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        color: rgb(64, 68, 73);
+        font-weight: bold;
+        border: solid 1px dimgray;
+        line-height: 31px;
+        background-color: lightgray;
+
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    
+        .Qty {
+          margin-top: 0px;
+          text-align: left;
+        }
+      
+  }

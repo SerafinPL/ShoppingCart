@@ -28,12 +28,13 @@
     }
   }
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 600px) {
     .ProductsList {
         flex-direction: row;
         p,
         .Qty {
           margin-top: 0px;
+          text-align: left;
         }
       }
   }
