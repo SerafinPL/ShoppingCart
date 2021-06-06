@@ -1,7 +1,10 @@
+@import "../../styles/variables.scss";
+
 .mainBox {
-  border: solid 1px dimgray;
+  border: solid 1px $dimgray;
   margin-bottom: 25px;
   width: 100%;
+  overflow-x: auto;
 }
 
 .List {
@@ -28,8 +31,9 @@
       width: 150px;
       text-align: right;
       font-weight: bold;
-      color: rgb(64, 68, 73);
+      color: $gray;
       margin-top: 5px;
+      padding-bottom: 4px;
     }
     .X {
       width: 25px;
@@ -56,18 +60,20 @@ footer {
 
     header {
       flex-direction: row;
-      border-bottom: solid 1px dimgray;
+      border-bottom: solid 1px $dimgray;
 
       p {
         margin-top: 0px;
         text-align: left;
+        padding-bottom: 0px;
+
       }
     }
 
     
   }
   footer {
-    border-top: solid 1px dimgray;
+    border-top: solid 1px $dimgray;
     align-items: inherit;
   }
 }

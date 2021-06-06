@@ -1,7 +1,9 @@
+@import "../../styles/variables.scss";
+
 .Qty {
   width: 150px;
   font-weight: normal;
-  color: rgb(64, 68, 73);
+  color: $gray;
   align-self: center;
   margin-top: 5px;
   text-align: left;
@@ -21,11 +23,11 @@
     text-align: center;
     width: 30px;
     height: 30px;
-    color: rgb(64, 68, 73);
+    color: $gray;
     font-weight: bold;
-    border: solid 1px dimgray;
+    border: solid 1px $dimgray;
     line-height: 26px;
-    background-color: lightgray;
+    background-color: $lightgray;
     cursor: pointer;
   }
   img {
