@@ -1,38 +1,42 @@
 .Qty {
-    width: 150px;
-    font-weight: normal;
+  width: 150px;
+  font-weight: normal;
+  color: rgb(64, 68, 73);
+  align-self: center;
+  margin-top: 5px;
+  text-align: left;
+  display: flex;
+
+  input {
+    width: 30px;
+    height: 30px;
+    border: solid 1px dimgray;
+    border-radius: 0px;
+    cursor: not-allowed;
+  }
+
+  span {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
     color: rgb(64, 68, 73);
-    align-self: center;
-    margin-top: 5px;
+    font-weight: bold;
+    border: solid 1px dimgray;
+    line-height: 26px;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Qty {
+    margin-top: 0px;
     text-align: left;
-
-    input{
-        width: 35px;
-        height: 35px;
-        border: solid 1px dimgray;
-        border-radius: 0px;
-
-    }
-
-    span{
-        display: inline-block;
-        text-align: center;
-        width: 35px;
-        height: 35px;
-        color: rgb(64, 68, 73);
-        font-weight: bold;
-        border: solid 1px dimgray;
-        line-height: 31px;
-        background-color: lightgray;
-
-    }
   }
-
-  @media screen and (min-width: 600px) {
-    
-        .Qty {
-          margin-top: 0px;
-          text-align: left;
-        }
-      
-  }
+}

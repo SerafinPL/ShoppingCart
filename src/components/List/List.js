@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useContext}from "react";
 
 import Button from "../Button/Button";
 import styles from "./List.module.scss";
-import fotoHeadset from "../../images/headphones.png";
-import fotoX from "../../images/x-img.png";
-import fotoPencil from "../../images/edit-img.png";
+
 import ProductsList from "../ProductsList/ProductsList";
+
+import {Context} from '../../context/context';
 
 const List = (props) => {
   console.log(props.products);
