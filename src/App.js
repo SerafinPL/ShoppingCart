@@ -4,6 +4,7 @@ import React from 'react';
 import Button from './components/Button/Button';
 import Header from './components/Header/Header';
 import List from './components/List/List';
+import SidePanel from './components/SidePanel/SidePanel';
 
 
 import productsData from "./data/products.json";
@@ -18,23 +19,9 @@ const App = () => {
       <Header/>
       <main>
         <List/>
+        <SidePanel/>
 
-        <aside>
-          <div>
-            <span>SHIPPING</span>
-            <span>Price</span>
-          </div>
-          <div>
-            <p>CART TOTALS</p>
-            <div>
-              <span>Subtotal</span>
-              <span>cena</span>
-              <span>Grand Total</span>
-              <span>cena</span>
-              <Button>Proceed to checout</Button>
-            </div>
-          </div>
-        </aside>
+        
       </main>
     </div>
   );
