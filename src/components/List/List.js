@@ -5,6 +5,7 @@ import styles from "./List.module.scss";
 import fotoHeadset from "../../images/headphones.png";
 import fotoX from "../../images/x-img.png";
 import fotoPencil from "../../images/edit-img.png";
+import ProductsList from "../ProductsList/ProductsList";
 
 const List = (props) => {
   console.log(props.products);
@@ -18,15 +19,8 @@ const List = (props) => {
           <p>Unit Price</p>
           <p>Qty</p>
         </header>
-        <main>
-          <img className={styles.X} src={fotoX} alt="X" />
-          <div className={styles.Headset}>
-            <img src={`/images/${props.products.image}`} alt="Headset" />
-          </div>
-          <p>name</p>
-          <p>price</p>
-          <div className={styles.Qty}>change</div>
-        </main>
+        <ProductsList products={props.products} cart={props.cart}/>
+        
       </section>
       <footer>
         <Button>Update Shopping Cart</Button>
