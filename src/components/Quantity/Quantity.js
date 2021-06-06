@@ -8,7 +8,7 @@ const Quantity = (props) => (
 
     <div className={styles.Qty}>
         <span>-</span>
-        <input type='text'/>
+        <input type='text' />
         <span>+</span>
     </div>
 )

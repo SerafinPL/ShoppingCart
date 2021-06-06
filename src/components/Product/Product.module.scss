@@ -1,6 +1,4 @@
-
-
-.ProductsList {
+.Product {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -29,7 +27,7 @@
   }
 
   @media screen and (min-width: 600px) {
-    .ProductsList {
+    .Product {
         flex-direction: row;
         p,
         .Qty {
