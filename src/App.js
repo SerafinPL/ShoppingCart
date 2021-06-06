@@ -18,7 +18,7 @@ const App = () => {
     <div className="App">
       <Header/>
       <main>
-        <List/>
+        <List products={productsData}/>
         <SidePanel/>
 
         

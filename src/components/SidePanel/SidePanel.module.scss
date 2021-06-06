@@ -4,8 +4,6 @@
   font-weight: bold;
   font-size: 0.8em;
   justify-self: center;
-  
-  
 
   .Shipping {
     display: flex;
@@ -51,28 +49,22 @@
       border-top: solid 1px dimgray;
     }
   }
-
-  
-
 }
 
 @media screen and (min-width: 500px) {
-    .SidePanel {
-        width: 50%;
-    }
-    
+  .SidePanel {
+    width: 50%;
+  }
 }
 
-
 @media screen and (min-width: 950px) {
-    .SidePanel {
-
-        width: 20%;
-        float: left;
-        .Shipping, .Totals {
-            float: right;
-            width: 90%;
-        }
+  .SidePanel {
+    width: 20%;
+    float: left;
+    .Shipping,
+    .Totals {
+      float: right;
+      width: 90%;
     }
-    
+  }
 }
