@@ -1,13 +1,12 @@
-import React, {useContext}from "react";
+import React, { useContext } from "react";
 
 import Button from "../Button/Button";
 import styles from "./SidePanel.module.scss";
 
-import {Context} from '../../context/context';
-
+import { Context } from "../../context/context";
 
 const SidePanel = () => {
-   const context = useContext(Context);
+  const context = useContext(Context);
 
   return (
     <aside className={styles.SidePanel}>

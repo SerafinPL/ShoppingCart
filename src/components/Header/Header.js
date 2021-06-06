@@ -10,7 +10,9 @@ const Header = () => {
   return (
     <header className={styles.Header}>
       <span>Shopping Cart</span>
-      <Button click={() => context.setAllView(false)}>Proceed to checkout</Button>
+      <Button click={() => context.setAllView(false)}>
+        Proceed to checkout
+      </Button>
     </header>
   );
 };

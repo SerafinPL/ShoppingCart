@@ -8,26 +8,27 @@ export default (props) => {
   const [summ, setSumm] = useState(0);
   const [viewProd, setViewProd] = useState(true);
   const [allView, setAllView] = useState(true);
-  
+
   useEffect(() => {
     submitChanges();
-  })
-  
+  });
+
   const submitChanges = () => {
     const values = document.getElementsByClassName("input");
     const prices = document.getElementsByClassName("price");
-    
+
     const valuesArray = Object.values(values);
-    
+
     let summary = 0;
+
     valuesArray.forEach((value, index) => {
-        summary += prices[index].textContent * value.value;
+      summary += prices[index].textContent * value.value;
     });
-    setSumm(summary)
-    setDeliveryCost(summary > 100 ? 0 : summary > 0 ? 23.8 : 0)
+
+    setSumm(summary);
+
+    setDeliveryCost(summary > 100 ? 0 : summary > 0 ? 23.8 : 0);
   };
-
-
 
   return (
     <Context.Provider
@@ -35,7 +36,7 @@ export default (props) => {
         deliveryCost: Number(deliveryCost.toFixed(2)),
         summ: Number(summ.toFixed(2)),
         submitChanges: submitChanges,
-        viewProd: viewProd, 
+        viewProd: viewProd,
         setViewProd: setViewProd,
         allView: allView,
         setAllView: setAllView,
