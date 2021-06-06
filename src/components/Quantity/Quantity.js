@@ -16,7 +16,7 @@ const Quantity = (props) => {
       >
         -
       </span>
-      <input className="input" type="text" value={props.qty} />
+      <input className="input" type="text" value={props.qty} readOnly />
       <span
         onClick={() => {
           props.setQty((value) => value + 1);

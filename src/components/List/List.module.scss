@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .mainBox {
-  border: solid 1px $dimgray;
+  border: solid 1px $lightgray;
   margin-bottom: 25px;
   width: 100%;
   overflow-x: auto;
@@ -15,7 +15,7 @@
   margin-bottom: 25px;
 
   header {
-    width: 90%;
+    width: 93%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
       width: 150px;
       text-align: right;
       font-weight: bold;
-      color: $gray;
+      color: #777;
       margin-top: 5px;
       padding-bottom: 4px;
     }
@@ -46,7 +46,7 @@
 footer {
   padding: 15px 10px 35px 0px;
 
-  width: 90%;
+  width: 93%;
   margin: 0 auto;
   display: flex;
 
@@ -66,6 +66,7 @@ footer {
         margin-top: 0px;
         text-align: left;
         padding-bottom: 0px;
+        
 
       }
     }
@@ -80,7 +81,7 @@ footer {
 
 @media screen and (min-width: 950px) {
   .mainBox {
-    width: 80%;
+    width: 75%;
     float: left;
   }
 }
