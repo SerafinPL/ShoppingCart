@@ -33,8 +33,8 @@ export default (props) => {
   return (
     <Context.Provider
       value={{
-        deliveryCost: Number(deliveryCost.toFixed(2)),
-        summ: Number(summ.toFixed(2)),
+        deliveryCost: Number(deliveryCost).toFixed(2),
+        summ: Number(summ).toFixed(2),
         submitChanges: submitChanges,
         viewProd: viewProd,
         setViewProd: setViewProd,

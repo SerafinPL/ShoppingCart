@@ -10,6 +10,7 @@
 .List {
   display: flex;
   flex-direction: row;
+  
   width: 100%;
 
   margin-bottom: 25px;
@@ -20,7 +21,7 @@
     display: flex;
     flex-direction: column;
 
-    padding: 35px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
 
     div.grow {
       flex-grow: 1;
@@ -29,11 +30,12 @@
     }
     p {
       width: 150px;
-      text-align: right;
+      text-align: left;
       font-weight: bold;
       color: #777;
       margin-top: 5px;
       padding-bottom: 4px;
+      
     }
     .X {
       width: 25px;
@@ -57,15 +59,17 @@ footer {
 @media screen and (min-width: 600px) {
   .List {
     flex-direction: column;
+    
 
     header {
       flex-direction: row;
+      align-items: baseline;
       border-bottom: solid 1px $dimgray;
 
       p {
         margin-top: 0px;
         text-align: left;
-        padding-bottom: 0px;
+        padding: 0px;
         
 
       }

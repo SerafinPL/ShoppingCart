@@ -4,7 +4,7 @@
   width: 80%;
   margin: 0 auto;
   font-weight: bold;
-  font-size: 1em;
+  
   justify-self: center;
 
   .Shipping {
@@ -12,13 +12,15 @@
     justify-content: space-between;
     width: 100%;
     float: right;
-    padding: 3%;
+    padding: 4%;
     border: solid 1px $lightgray;
     background-color: $F5;
     margin-bottom: 15px;
 
-    span{
+    span {
       cursor: default;
+      font-weight: 700;
+      font-size: 0.8em;
     }
   }
 
@@ -32,11 +34,22 @@
 
     p {
       text-align: left;
-      padding: 3%;
+      padding: 4%;
       border-bottom: solid 1px $lightgray;
       background-color: $F5;
       cursor: default;
+      font-weight: 700;
+      font-size: 0.8em;
     }
+
+    .Subtotal{
+      margin-top: 25px !important;
+    }
+
+    .SpaceBelow{
+      margin-bottom: 25px !important;
+    }
+
     & > div.Box {
       padding: 3%;
 
@@ -47,21 +60,37 @@
       width: 90%;
       margin: 0 auto;
 
-      span{
+      span {
         cursor: default;
+        font-weight: 400;
+        color: $dimgray;
+
+
+      }
+
+     
+
+      .price{
+        font-weight: 700;
+        color: initial;
         
-          font-weight: 500;
-          font-size: 1.125em;
-        
+      }
+
+      .bigPrice{
+        font-weight: 700;
+        color: initial;
+        font-size: 1.2em;
+        padding-bottom: 10px;
       }
 
       div {
         width: 100%;
       }
     }
+    
 
     .BorderAbove {
-      border-top: solid 1px $lightgray
+      border-top: solid 1px $lightgray;
     }
   }
 }
