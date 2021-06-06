@@ -6,7 +6,9 @@ import fotoPencil from "../../images/edit-img.png";
 
 import {Context} from '../../context/context';
 
-const Quantity = (props) => (
+const Quantity = (props) =>{
+    const context = useContext(Context);
+return(
   <div className={styles.Qty}>
     <span
       onClick={() => {
@@ -23,8 +25,8 @@ const Quantity = (props) => (
     >
       +
     </span>
-    <img src={fotoPencil} alt="Pencil" />
+    <img src={fotoPencil} alt="Pencil" onClick={context.submitChanges}/>
   </div>
-);
+);}
 
 export default Quantity;

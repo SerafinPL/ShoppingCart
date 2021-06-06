@@ -8,7 +8,7 @@ import ProductsList from "../ProductsList/ProductsList";
 import {Context} from '../../context/context';
 
 const List = (props) => {
-  console.log(props.products);
+  const context = useContext(Context);
   return (
     <div className={styles.mainBox}>
       <section className={styles.List}>
@@ -19,11 +19,11 @@ const List = (props) => {
           <p>Unit Price</p>
           <p>Qty</p>
         </header>
-        <ProductsList products={props.products} cart={props.cart}/>
+        {context.viewProd && <ProductsList products={props.products} cart={props.cart}/>}
         
       </section>
       <footer>
-        <Button>Update Shopping Cart</Button>
+        <Button click={context.submitChanges}>Update Shopping Cart</Button>
       </footer>
     </div>
   );

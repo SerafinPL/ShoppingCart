@@ -10,9 +10,10 @@
   input {
     width: 30px;
     height: 30px;
-    border: solid 1px dimgray;
+    border: inset 2px;
     border-radius: 0px;
     cursor: not-allowed;
+    text-align: center;
   }
 
   span {

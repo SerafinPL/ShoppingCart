@@ -6,6 +6,7 @@ export const Context = React.createContext({});
 export default (props) => {
   const [deliveryCost, setDeliveryCost] = useState(0);
   const [summ, setSumm] = useState(0);
+  const [viewProd, setViewProd] = useState(true)
   
   useEffect(() => {
     submitChanges();
@@ -22,15 +23,19 @@ export default (props) => {
         summary += prices[index].textContent * value.value;
     });
     setSumm(summary)
-    setDeliveryCost(summary > 100 ? 0 : 23.8)
+    setDeliveryCost(summary > 100 ? 0 : summary > 0 ? 23.8 : 0)
   };
+
+
 
   return (
     <Context.Provider
       value={{
-        deliveryCost: deliveryCost,
-        summ: summ,
+        deliveryCost: Number(deliveryCost.toFixed(2)),
+        summ: Number(summ.toFixed(2)),
         submitChanges: submitChanges,
+        viewProd: viewProd, 
+        setViewProd: setViewProd,
       }}
     >
       {props.children}

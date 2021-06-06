@@ -12,9 +12,6 @@ import cartData from "./data/cart_products.json";
 import Context from "./context/context";
 
 const App = () => {
-  console.log(productsData);
-  console.log(cartData);
-
   return (
     <div className="App">
       <Header />
