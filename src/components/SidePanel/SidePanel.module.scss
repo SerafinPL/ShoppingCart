@@ -1,0 +1,78 @@
+.SidePanel {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 0.8em;
+  justify-self: center;
+  
+  
+
+  .Shipping {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    float: right;
+    padding: 3%;
+    border: solid 1px dimgray;
+    background-color: lightgray;
+    margin-bottom: 15px;
+  }
+
+  .Totals {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    float: right;
+    border: solid 1px dimgray;
+    background-color: lavender;
+
+    p {
+      text-align: left;
+      padding: 3%;
+      border-bottom: solid 1px dimgray;
+      background-color: lightgray;
+    }
+    & > div.Box {
+      padding: 3%;
+
+      background-color: lavender;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 auto;
+
+      div {
+        width: 100%;
+      }
+    }
+
+    .BorderAbove {
+      border-top: solid 1px dimgray;
+    }
+  }
+
+  
+
+}
+
+@media screen and (min-width: 500px) {
+    .SidePanel {
+        width: 50%;
+    }
+    
+}
+
+
+@media screen and (min-width: 950px) {
+    .SidePanel {
+
+        width: 20%;
+        float: left;
+        .Shipping, .Totals {
+            float: right;
+            width: 90%;
+        }
+    }
+    
+}
