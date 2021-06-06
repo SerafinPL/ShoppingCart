@@ -1,6 +1,6 @@
 import React, { useState, useContext}from "react";
 
-import Button from "../Button/Button";
+
 import Quantity from "../Quantity/Quantity";
 import styles from "./Product.module.scss";
 import {Context} from '../../context/context';
@@ -9,11 +9,19 @@ import fotoX from "../../images/x-img.png";
 
 const Product = ({ value, qty }) => {
   const [quantity, setQuantity] = useState(qty);
+  const [view, setView] = useState(true);
   const context = useContext(Context);
 
-  return (
-    <main key={value.id} className={styles.Product}>
-      <img className={styles.X} src={fotoX} alt="X" onClick={() => context.setViewProd(false)}/>
+  const clearProduct = () => {
+    setView(false); 
+    context.submitChanges();
+  }
+
+  let product = null;
+
+  product = view && 
+      <main key={value.id} className={styles.Product}>
+      <img className={styles.X} src={fotoX} alt="X" onClick={clearProduct}/>
       <div className={styles.Headset}>
         <img src={`images/${value.image}`} alt="Headset" />
       </div>
@@ -22,7 +30,11 @@ const Product = ({ value, qty }) => {
 
       <Quantity qty={quantity} setQty={setQuantity}/>
     </main>
-  );
+
+
+  return product
+    
+
 };
 
 export default Product;

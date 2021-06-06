@@ -4,5 +4,11 @@
     "name":"Headphones",
     "image":"headphones.png",
     "price":11.90
+  },
+  {
+    "id":2,
+    "name":"Headphones+",
+    "image":"headphones.png",
+    "price":21.90
   }
 ]
