@@ -1,11 +1,11 @@
-import React, {useContext}from "react";
+import React, { useContext } from "react";
 
 import Button from "../Button/Button";
 import styles from "./List.module.scss";
 
 import ProductsList from "../ProductsList/ProductsList";
 
-import {Context} from '../../context/context';
+import { Context } from "../../context/context";
 
 const List = (props) => {
   const context = useContext(Context);
@@ -19,8 +19,9 @@ const List = (props) => {
           <p>Unit Price</p>
           <p>Qty</p>
         </header>
-        {context.viewProd && <ProductsList products={props.products} cart={props.cart}/>}
-        
+        {context.viewProd && (
+          <ProductsList products={props.products} cart={props.cart} />
+        )}
       </section>
       <footer>
         <Button click={context.submitChanges}>Update Shopping Cart</Button>

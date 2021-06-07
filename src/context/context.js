@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 export const Context = React.createContext({});
 
@@ -9,11 +9,7 @@ export default (props) => {
   const [viewProd, setViewProd] = useState(true);
   const [allView, setAllView] = useState(true);
 
-  useEffect(() => {
-    submitChanges();
-  });
-
-  const submitChanges = () => {
+  const submitChanges = useCallback(() => {
     const values = document.getElementsByClassName("input");
     const prices = document.getElementsByClassName("price");
 
@@ -28,7 +24,11 @@ export default (props) => {
     setSumm(summary);
 
     setDeliveryCost(summary > 100 ? 0 : summary > 0 ? 23.8 : 0);
-  };
+  }, []);
+
+  useEffect(() => {
+    submitChanges();
+  }, [submitChanges]);
 
   return (
     <Context.Provider
