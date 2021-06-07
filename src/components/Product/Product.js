@@ -16,13 +16,15 @@ const Product = ({ value, qty }) => {
     context.submitChanges();
   };
 
+
+
   let product = null;
 
   product = view && (
     <main key={value.id} className={styles.Product}>
       <img className={styles.X} src={fotoX} alt="X" onClick={clearProduct} />
       <div className={styles.Headset}>
-        <img src={`images/${value.image}`} alt="Headset" />
+        <img src={`./images/${value.image}`} alt="Headset" />
       </div>
       <p>{value.name}</p>
       <p>

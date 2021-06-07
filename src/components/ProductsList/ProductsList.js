@@ -13,6 +13,7 @@ const ProductsList = (props) => {
   const reducedProducts = products.reduce((a, b) => {
     return a.concat(b);
   });
+  console.log(reducedProducts);
 
   return reducedProducts.map((item) => {
     const [qty] = props.cart.filter((element) => element.productId === item.id);
