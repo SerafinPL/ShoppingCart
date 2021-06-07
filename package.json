@@ -2,10 +2,12 @@
   "name": "shopping-cart",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://serafinpl.github.io/shopping-cart",
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^3.2.0",
     "json-loader": "^0.5.7",
     "node-sass": "^6.0.0",
     "react": "^17.0.2",
@@ -17,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b online -d build -r https://github.com/SerafinPL/shopping-cart.git"
   },
   "eslintConfig": {
     "extends": [
