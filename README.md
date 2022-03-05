@@ -1,13 +1,13 @@
 # ReactJS shopping cart
 
 
-## online version:
+## online version: https://serafinpl.github.io/shopping-cart/
 
-https://serafinpl.github.io/shopping-cart/
 
-## Stack:
 
-ReactJs & Sass & Context
+## Stack: ReactJs & Sass & Context
+
+
 
 ### flow
 
