@@ -9,7 +9,7 @@ https://serafinpl.github.io/shopping-cart/
 
 ReactJs & Sass & Context
 
-##flow
+### flow
 
 update shoping cart only on click
 
